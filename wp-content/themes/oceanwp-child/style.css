@@ -1,0 +1,48 @@
+/*
+ Theme Name:   ocanwp child
+ Theme URI:    http://example.com/hamilton-child/
+ Description:  ocanwp child Theme
+ Author:       Lars Iversen
+ Author URI:   http://example.com
+ Template:     oceanwp
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentyfifteenchild
+*/
+
+.composition__photo {
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    max-width: 50%;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 10;
+    transition: all .2s;
+    outline-offset: -.7rem; 
+}
+.composition__photo--p1 {
+    left: 50%;
+    top: 20rem; 
+}
+.composition__photo--p2 {
+    right: 50%;
+    top: 10rem; 
+}
+.composition__photo--p3 {
+    right: -50%;
+    top: 15rem; 
+}
+.composition__photo--p4 {
+    left: -50%;
+    top: 5rem; 
+}
+.composition__photo:hover {
+    outline: 1px solid #fff;
+    transform: scale(1.05) translateY(-0.5rem);
+    box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+    z-index: 20; 
+}
+.composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.95); 
+}
